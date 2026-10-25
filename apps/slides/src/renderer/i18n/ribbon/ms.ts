@@ -145,6 +145,7 @@ export const ms = {
   ribbonSlideSizeHeight: 'Tinggi',
   ribbonSlideSizeUnits: 'Unit',
   ribbonSlideSizeRange: 'Setiap sisi mestilah antara 1 dan 56 inci (2.54–142.24 cm).',
+  ribbonSlideSizeUseForNew: 'Guna untuk Persembahan Baharu',
   ribbonTransparency: 'Ketelusan',
   ribbonFindReplace: 'Cari/Ganti',
   ribbonStrikethrough: 'Garis Lorek',

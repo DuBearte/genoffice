@@ -142,6 +142,7 @@ export const he = {
   ribbonSlideSizeHeight: 'גובה',
   ribbonSlideSizeUnits: 'יחידות',
   ribbonSlideSizeRange: 'כל צלע חייבת להיות בין 1 ל-56 אינץ\' (2.54–142.24 ס"מ).',
+  ribbonSlideSizeUseForNew: 'שימוש עבור מצגות חדשות',
   ribbonTransparency: 'שקיפות',
   ribbonFindReplace: 'חיפוש/החלפה',
   ribbonStrikethrough: 'קו חוצה',

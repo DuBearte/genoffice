@@ -150,6 +150,7 @@ export const fr = {
   ribbonSlideSizeHeight: 'Hauteur',
   ribbonSlideSizeUnits: 'Unités',
   ribbonSlideSizeRange: 'Chaque côté doit mesurer entre 1 et 56 pouces (2,54–142,24 cm).',
+  ribbonSlideSizeUseForNew: 'Utiliser pour les nouvelles présentations',
   ribbonTransparency: 'Transparence',
   ribbonFindReplace: 'Rechercher',
   ribbonStrikethrough: 'Barré',

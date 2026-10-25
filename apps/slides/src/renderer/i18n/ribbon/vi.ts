@@ -144,6 +144,7 @@ export const vi = {
   ribbonSlideSizeHeight: 'Chiều cao',
   ribbonSlideSizeUnits: 'Đơn vị',
   ribbonSlideSizeRange: 'Mỗi cạnh phải từ 1 đến 56 inch (2,54–142,24 cm).',
+  ribbonSlideSizeUseForNew: 'Dùng cho bản trình bày mới',
   ribbonTransparency: 'Độ trong suốt',
   ribbonFindReplace: 'Tìm/Thay thế',
   ribbonStrikethrough: 'Gạch ngang',

@@ -149,6 +149,7 @@ export const it = {
   ribbonSlideSizeHeight: 'Altezza',
   ribbonSlideSizeUnits: 'Unità',
   ribbonSlideSizeRange: 'Ogni lato deve essere compreso tra 1 e 56 pollici (2,54–142,24 cm).',
+  ribbonSlideSizeUseForNew: 'Usa per le nuove presentazioni',
   ribbonTransparency: 'Trasparenza',
   ribbonFindReplace: 'Trova/Sostituisci',
   ribbonStrikethrough: 'Barrato',

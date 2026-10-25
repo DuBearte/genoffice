@@ -140,6 +140,7 @@ export const zhTW = {
   ribbonSlideSizeHeight: '高度',
   ribbonSlideSizeUnits: '單位',
   ribbonSlideSizeRange: '每一邊須介於 1 到 56 英寸（2.54 到 142.24 公分）之間。',
+  ribbonSlideSizeUseForNew: '用於新簡報',
   ribbonTransparency: '透明度',
   ribbonFindReplace: '尋找/取代',
   ribbonStrikethrough: '刪除線',

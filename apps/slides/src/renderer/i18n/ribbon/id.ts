@@ -147,6 +147,7 @@ export const id = {
   ribbonSlideSizeHeight: 'Tinggi',
   ribbonSlideSizeUnits: 'Satuan',
   ribbonSlideSizeRange: 'Setiap sisi harus antara 1 dan 56 inci (2,54–142,24 cm).',
+  ribbonSlideSizeUseForNew: 'Gunakan untuk Presentasi Baru',
   ribbonTransparency: 'Transparansi',
   ribbonFindReplace: 'Cari/Ganti',
   ribbonStrikethrough: 'Coretan',

@@ -144,6 +144,7 @@ export const en = {
   ribbonSlideSizeHeight: 'Height',
   ribbonSlideSizeUnits: 'Units',
   ribbonSlideSizeRange: 'Each side must be between 1 and 56 inches (2.54–142.24 cm).',
+  ribbonSlideSizeUseForNew: 'Use for New Presentations',
   ribbonTransparency: 'Transparency',
   ribbonFindReplace: 'Find/Replace',
   ribbonStrikethrough: 'Strikethrough',

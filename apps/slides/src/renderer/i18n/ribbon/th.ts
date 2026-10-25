@@ -145,6 +145,7 @@ export const th = {
   ribbonSlideSizeHeight: 'ความสูง',
   ribbonSlideSizeUnits: 'หน่วย',
   ribbonSlideSizeRange: 'แต่ละด้านต้องอยู่ระหว่าง 1 ถึง 56 นิ้ว (2.54–142.24 ซม.)',
+  ribbonSlideSizeUseForNew: 'ใช้กับงานนำเสนอใหม่',
   ribbonTransparency: 'ความโปร่งใส',
   ribbonFindReplace: 'ค้นหา/แทนที่',
   ribbonStrikethrough: 'ขีดทับ',

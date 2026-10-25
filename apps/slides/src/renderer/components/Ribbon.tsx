@@ -126,7 +126,13 @@ import { RibbonInsertTab } from './RibbonInsertTab'
 import { ShapeGalleryContent } from './ShapeGalleryPopover'
 import { autoContextTabForElement, contextTabForElement, type ContextTab } from './context-tabs'
 import { MODEL3D_VIEWS } from '../model3d/views'
-import { isPortrait, matchSlideSizePreset, presetSize } from '../slide-size'
+import {
+  defaultNewSlideSize,
+  isPortrait,
+  matchSlideSizePreset,
+  presetSize,
+  saveDefaultNewSlideSize,
+} from '../slide-size'
 import { NO_ROTATION } from '@genoffice/pptx-engine/model3d'
 
 const IS_MAC = navigator.platform.toLowerCase().includes('mac')
@@ -2195,6 +2201,22 @@ export function Ribbon({
                       }}
                     >
                       {t('ribbonSlideSizeCustom')}
+                    </button>
+                    <button
+                      className={
+                        deckSize &&
+                        defaultNewSlideSize()?.cx === deckSize.cx &&
+                        defaultNewSlideSize()?.cy === deckSize.cy
+                          ? 'active'
+                          : ''
+                      }
+                      disabled={!deckSize}
+                      onClick={() => {
+                        setSlideSizeOpen(false)
+                        if (deckSize) saveDefaultNewSlideSize(deckSize)
+                      }}
+                    >
+                      {t('ribbonSlideSizeUseForNew')}
                     </button>
                   </div>
                 )}

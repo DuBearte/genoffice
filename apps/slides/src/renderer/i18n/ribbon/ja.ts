@@ -148,6 +148,7 @@ export const ja = {
   ribbonSlideSizeHeight: '高さ',
   ribbonSlideSizeUnits: '単位',
   ribbonSlideSizeRange: '各辺は 1～56 インチ (2.54～142.24 cm) の範囲で指定してください。',
+  ribbonSlideSizeUseForNew: '新しいプレゼンテーションに使用',
   ribbonTransparency: '透明度',
   ribbonFindReplace: '検索/置換',
   ribbonStrikethrough: '取り消し線',

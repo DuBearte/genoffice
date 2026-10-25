@@ -148,6 +148,7 @@ export const ko = {
   ribbonSlideSizeHeight: '높이',
   ribbonSlideSizeUnits: '단위',
   ribbonSlideSizeRange: '각 변은 1~56인치(2.54~142.24cm) 사이여야 합니다.',
+  ribbonSlideSizeUseForNew: '새 프레젠테이션에 사용',
   ribbonTransparency: '투명도',
   ribbonFindReplace: '찾기/바꾸기',
   ribbonStrikethrough: '취소선',

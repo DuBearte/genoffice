@@ -147,6 +147,7 @@ export const ru = {
   ribbonSlideSizeHeight: 'Высота',
   ribbonSlideSizeUnits: 'Единицы',
   ribbonSlideSizeRange: 'Каждая сторона должна быть от 1 до 56 дюймов (2,54–142,24 см).',
+  ribbonSlideSizeUseForNew: 'Использовать для новых презентаций',
   ribbonTransparency: 'Прозрачность',
   ribbonFindReplace: 'Найти/Заменить',
   ribbonStrikethrough: 'Зачеркнутый',

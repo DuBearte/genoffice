@@ -144,6 +144,7 @@ export const hi = {
   ribbonSlideSizeHeight: 'ऊँचाई',
   ribbonSlideSizeUnits: 'इकाई',
   ribbonSlideSizeRange: 'हर भुजा 1 से 56 इंच (2.54–142.24 सेमी) के बीच होनी चाहिए।',
+  ribbonSlideSizeUseForNew: 'नई प्रस्तुतियों के लिए उपयोग करें',
   ribbonTransparency: 'पारदर्शिता',
   ribbonFindReplace: 'ढूँढें/बदलें',
   ribbonStrikethrough: 'स्ट्राइकथ्रू',

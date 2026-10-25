@@ -148,6 +148,7 @@ export const de = {
   ribbonSlideSizeHeight: 'Höhe',
   ribbonSlideSizeUnits: 'Einheit',
   ribbonSlideSizeRange: 'Jede Seite muss zwischen 1 und 56 Zoll (2,54–142,24 cm) liegen.',
+  ribbonSlideSizeUseForNew: 'Für neue Präsentationen verwenden',
   ribbonTransparency: 'Transparenz',
   ribbonFindReplace: 'Suchen',
   ribbonStrikethrough: 'Durchgestrichen',

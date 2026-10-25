@@ -61,3 +61,30 @@ export function emuToLength(emu: number, unit: SizeUnit): string {
   const digits = unit === 'mm' ? 1 : 2
   return String(Number((emu / EMU_PER_UNIT[unit]).toFixed(digits)))
 }
+
+const DEFAULT_KEY = 'ai-slides-default-size'
+
+const inLimits = (n: unknown): n is number =>
+  typeof n === 'number' && Number.isInteger(n) && n >= MIN_SLIDE_EMU && n <= MAX_SLIDE_EMU
+
+/** "Use for New Presentations": the size new blank decks start at; null keeps the 16:9 template. Per install, like the default shape. */
+export function defaultNewSlideSize(): { cx: number; cy: number } | null {
+  try {
+    const v = JSON.parse(localStorage.getItem(DEFAULT_KEY) ?? 'null') as {
+      cx?: unknown
+      cy?: unknown
+    } | null
+    if (v && inLimits(v.cx) && inLimits(v.cy)) return { cx: v.cx, cy: v.cy }
+  } catch {
+    /* unreadable entry: new decks keep the template size */
+  }
+  return null
+}
+
+export function saveDefaultNewSlideSize(size: { cx: number; cy: number }): void {
+  try {
+    localStorage.setItem(DEFAULT_KEY, JSON.stringify({ cx: size.cx, cy: size.cy }))
+  } catch {
+    /* quota: the default is a convenience, not document data */
+  }
+}

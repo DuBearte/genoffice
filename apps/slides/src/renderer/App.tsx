@@ -98,6 +98,7 @@ import { EquationDialog, HeaderFooterDialog, LinkDialog } from './components/Ins
 import { RedactDialog } from './components/RedactDialog'
 import { ZoomDialog } from './components/ZoomDialog'
 import { SlideSizeDialog } from './components/SlideSizeDialog'
+import { defaultNewSlideSize } from './slide-size'
 import { CutoutDialog } from './components/CutoutDialog'
 import {
   createWheelPager,
@@ -1235,7 +1236,7 @@ export function App() {
   }, [hasDoc, viewMode, previewZoom, slides.length])
 
   const newBlank = useCallback(async () => {
-    const r = await window.slidesApi.newBlank(FIT_WIDTH)
+    const r = await window.slidesApi.newBlank(FIT_WIDTH, defaultNewSlideSize() ?? undefined)
     applyOpen(r)
     return r
   }, [applyOpen])

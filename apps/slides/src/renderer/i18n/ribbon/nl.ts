@@ -146,6 +146,7 @@ export const nl = {
   ribbonSlideSizeHeight: 'Hoogte',
   ribbonSlideSizeUnits: 'Eenheden',
   ribbonSlideSizeRange: 'Elke zijde moet tussen 1 en 56 inch (2,54–142,24 cm) liggen.',
+  ribbonSlideSizeUseForNew: 'Gebruiken voor nieuwe presentaties',
   ribbonTransparency: 'Transparantie',
   ribbonFindReplace: 'Zoeken/Vervangen',
   ribbonStrikethrough: 'Doorhalen',

@@ -144,6 +144,7 @@ export const cs = {
   ribbonSlideSizeHeight: 'Výška',
   ribbonSlideSizeUnits: 'Jednotky',
   ribbonSlideSizeRange: 'Každá strana musí mít 1 až 56 palců (2,54–142,24 cm).',
+  ribbonSlideSizeUseForNew: 'Použít pro nové prezentace',
   ribbonTransparency: 'Průhlednost',
   ribbonFindReplace: 'Najít/nahradit',
   ribbonStrikethrough: 'Přeškrtnutí',

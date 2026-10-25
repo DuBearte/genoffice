@@ -150,6 +150,7 @@ export const es = {
   ribbonSlideSizeHeight: 'Alto',
   ribbonSlideSizeUnits: 'Unidades',
   ribbonSlideSizeRange: 'Cada lado debe medir entre 1 y 56 pulgadas (2,54–142,24 cm).',
+  ribbonSlideSizeUseForNew: 'Usar en presentaciones nuevas',
   ribbonTransparency: 'Transparencia',
   ribbonFindReplace: 'Buscar',
   ribbonStrikethrough: 'Tachado',

@@ -144,6 +144,7 @@ export const zh = {
   ribbonSlideSizeHeight: '高度',
   ribbonSlideSizeUnits: '单位',
   ribbonSlideSizeRange: '每条边须在 1 到 56 英寸（2.54 到 142.24 厘米）之间。',
+  ribbonSlideSizeUseForNew: '用于新建演示文稿',
   ribbonTransparency: '透明度',
   ribbonFindReplace: '查找/替换',
   ribbonStrikethrough: '删除线',

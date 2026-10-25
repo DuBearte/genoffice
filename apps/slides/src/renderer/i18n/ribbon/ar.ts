@@ -144,6 +144,7 @@ export const ar = {
   ribbonSlideSizeHeight: 'الارتفاع',
   ribbonSlideSizeUnits: 'الوحدات',
   ribbonSlideSizeRange: 'يجب أن يكون كل جانب بين 1 و56 بوصة (2.54–142.24 سم).',
+  ribbonSlideSizeUseForNew: 'استخدام للعروض التقديمية الجديدة',
   ribbonTransparency: 'الشفافية',
   ribbonFindReplace: 'بحث/استبدال',
   ribbonStrikethrough: 'يتوسطه خط',

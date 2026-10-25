@@ -147,6 +147,7 @@ export const pl = {
   ribbonSlideSizeHeight: 'Wysokość',
   ribbonSlideSizeUnits: 'Jednostki',
   ribbonSlideSizeRange: 'Każdy bok musi mieć od 1 do 56 cali (2,54–142,24 cm).',
+  ribbonSlideSizeUseForNew: 'Używaj dla nowych prezentacji',
   ribbonTransparency: 'Przezroczystość',
   ribbonFindReplace: 'Znajdź/Zamień',
   ribbonStrikethrough: 'Przekreślenie',

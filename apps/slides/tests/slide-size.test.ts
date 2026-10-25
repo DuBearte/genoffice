@@ -1,9 +1,11 @@
-import { describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 import {
+  defaultNewSlideSize,
   emuToLength,
   lengthToEmu,
   matchSlideSizePreset,
   presetSize,
+  saveDefaultNewSlideSize,
 } from '../src/renderer/slide-size'
 
 describe('matchSlideSizePreset', () => {
@@ -52,5 +54,22 @@ describe('lengthToEmu / emuToLength', () => {
     expect(emuToLength(7560000, 'mm')).toBe('210')
     expect(emuToLength(10692000, 'cm')).toBe('29.7')
     expect(emuToLength(12192000, 'in')).toBe('13.33')
+  })
+})
+
+describe('defaultNewSlideSize', () => {
+  beforeEach(() => localStorage.clear())
+
+  it('is unset until a size is saved, then returns it', () => {
+    expect(defaultNewSlideSize()).toBeNull()
+    saveDefaultNewSlideSize(presetSize('A4', true))
+    expect(defaultNewSlideSize()).toEqual({ cx: 7560000, cy: 10692000 })
+  })
+
+  it('ignores a corrupt or out-of-range entry', () => {
+    localStorage.setItem('ai-slides-default-size', '{not json')
+    expect(defaultNewSlideSize()).toBeNull()
+    localStorage.setItem('ai-slides-default-size', JSON.stringify({ cx: 10, cy: 7560000 }))
+    expect(defaultNewSlideSize()).toBeNull()
   })
 })
