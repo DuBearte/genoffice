@@ -376,6 +376,9 @@ export interface HomeApi {
   getUpdateChannel(): Promise<UpdateChannel>
   /** switch + persist the update channel; triggers an immediate update check */
   setUpdateChannel(channel: UpdateChannel): Promise<void>
+  /** whether the launch and periodic background update checks run (default on) */
+  getAutoUpdateCheck(): Promise<boolean>
+  setAutoUpdateCheck(on: boolean): Promise<void>
   /** Genspark account status (gsk login state; to be upgraded to a signup/account system later) */
   accountStatus(): Promise<AccountStatus>
   /** start Genspark login (opens the browser; accountStatus flips to logged-in on completion); returns whether the launch succeeded */
@@ -676,6 +679,8 @@ export const HOME_CHANNELS = {
   setLanguage: 'home:set-language',
   getUpdateChannel: 'home:get-update-channel',
   setUpdateChannel: 'home:set-update-channel',
+  getAutoUpdateCheck: 'home:get-auto-update-check',
+  setAutoUpdateCheck: 'home:set-auto-update-check',
   accountStatus: 'home:account-status',
   accountLogin: 'home:account-login',
   accountLoginEvent: 'home:account-login-event',

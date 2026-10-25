@@ -616,6 +616,13 @@ function currentUpdateChannel(): UpdateChannel {
   return cachedUpdateChannel
 }
 
+let cachedAutoUpdateCheck: boolean | null = null
+
+function autoUpdateCheckEnabled(): boolean {
+  cachedAutoUpdateCheck ??= readAppSettings(APP_SETTINGS_PATH()).autoUpdateCheck !== false
+  return cachedAutoUpdateCheck
+}
+
 let cachedTheme: UiTheme | null = null
 
 function currentTheme(): UiTheme {
@@ -5052,6 +5059,14 @@ function registerHomeIpc(): void {
     applyUpdateChannel(channel)
   })
 
+  ipcMain.handle(HOME_CHANNELS.getAutoUpdateCheck, () => autoUpdateCheckEnabled())
+
+  ipcMain.handle(HOME_CHANNELS.setAutoUpdateCheck, (_event, on: unknown) => {
+    if (typeof on !== 'boolean') return
+    writeAppSetting(APP_SETTINGS_PATH(), 'autoUpdateCheck', on)
+    cachedAutoUpdateCheck = on
+  })
+
   ipcMain.handle(
     HOME_CHANNELS.onboardingSeen,
     (): boolean => readAppSettings(APP_SETTINGS_PATH()).onboardingSeen === true,
@@ -7107,7 +7122,7 @@ app.whenReady().then(async () => {
   setUpdateCheckInvoker(() => void checkForUpdatesNow())
   // every app's Settings entry (⌘, / Ctrl+,) lands on the shell's Settings view
   setSettingsInvoker(() => openSettingsView())
-  initAutoUpdater(() => shellWindow, currentUpdateChannel())
+  initAutoUpdater(() => shellWindow, currentUpdateChannel(), autoUpdateCheckEnabled)
   // resource watchdog: a renderer that stays hot for minutes gets diagnostics
   // recorded and the user an offer to close the document (headless exports
   // are short-lived and unattended)
