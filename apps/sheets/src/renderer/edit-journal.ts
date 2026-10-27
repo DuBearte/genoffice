@@ -1289,6 +1289,10 @@ export function toSaveVisualAdds(journal: EditJournal): WorkbookVisualAdd[] {
         ...(visual.chart.holeSizePct === undefined
           ? {}
           : { holeSizePct: Math.round(visual.chart.holeSizePct) }),
+        // PivotChart marker rides along so the save writes c:pivotSource.
+        ...(visual.chart.pivotTablePath === undefined
+          ? {}
+          : { pivotTablePath: visual.chart.pivotTablePath }),
       },
     })
   }
